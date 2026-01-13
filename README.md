@@ -100,9 +100,8 @@ Project_Root/
 | SDCFusion        | 0.039 | 64.003 | **0.712** | 0.023            | 0.957 | 1.739 |
 | CtrlFuse(Ours)   | **0.035** | **64.75** | 0.685          | **0.018**        | 0.969 | 1.726 |
 
-
 ## 🤝 Citation
 
 ## 📧 Contact
-
+If you have any other questions about the code, please email ruanyuan@seu.edu.cn.
 
