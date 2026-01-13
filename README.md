@@ -64,9 +64,8 @@ Project_Root/
 
 ## 📊 Results
 
-| Methods       | MSE   | PSNR  | Q<sub>abf</sub> | N<sub>abf</sub> | SSIM  | SCD   |
+| **FMB Dataset**  | MSE   | PSNR  | Q<sub>abf</sub> | N<sub>abf</sub> | SSIM  | SCD   |
 |---------------|-------|-------|------------------|------------------|-------|-------|
-| **FMB Dataset** |       |       |                  |                  |       |       |
 | LDFusion      | 0.061 | 60.71 | 0.51             | 0.112            | 0.514 | 1.549 |
 | SwinFuse      | **0.042** | 62.334 | 0.577 | 0.029 | 0.905 | **1.900** |
 | NestFuse      | 0.046 | 61.96 | 0.483            | 0.042            | 0.787 | 1.594 |
