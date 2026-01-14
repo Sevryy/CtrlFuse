@@ -1,7 +1,7 @@
 # [CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion] (Official PyTorch Implementation)
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2601.08619)
-[![Framework](https://img.shields.io/badge/PyTorch-%3E%3D1.8.0-orange)](https://pytorch.org/)
+[![Framework](https://img.shields.io/badge/PyTorch-%3E%3D2.0.0-orange)](https://pytorch.org/)
 [![Stars](https://img.shields.io/github/stars/[GithubUsername]/[RepoName].svg?style=social)](https://github.com/[GithubUsername]/[RepoName])
 
 This repository contains the official PyTorch implementation of the paper:
