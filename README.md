@@ -1,11 +1,11 @@
-# [CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion] (Official PyTorch Implementation)
+# CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion (Official PyTorch Implementation)
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2601.08619)
 [![Framework](https://img.shields.io/badge/PyTorch-%3E%3D2.0.0-orange)](https://pytorch.org/)
 [![Stars](https://img.shields.io/github/stars/[GithubUsername]/[RepoName].svg?style=social)](https://github.com/[GithubUsername]/[RepoName])
 
 This repository contains the official PyTorch implementation of the paper:
-**"[CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion]"** (Accepted by AAAI 2026)
+**"CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion"** (Accepted by AAAI 2026)
 
 > **Authors**: Yiming Sun, Yuan Ruan, Qinghua Hu,Pengfei Zhu
 > **Affiliation**: VisDrone Group
@@ -18,7 +18,7 @@ This repository contains the official PyTorch implementation of the paper:
 [Infrared and visible image fusion generates all-weather perception-capable images by combining complementary modalities, enhancing environmental awareness for intelligent unmanned systems. Existing methods either focus on pixel-level fusion while overlooking downstream task adaptability or implicitly learn rigid semantics through cascaded detection/segmentation models, unable to interactively address diverse semantic target perception needs. We propose CtrlFuse, a controllable image fusion framework that enables interactive dynamic fusion guided by mask prompts. The model integrates a multi-modal feature extractor, a reference prompt encoder (RPE), and a prompt-semantic fusion module(PSFM). The RPE dynamically encodes task-specific semantic prompts by fine-tuning pre-trained segmentation models with input mask guidance, while the PSFM explicitly injects these semantics into fusion features. Through synergistic optimization of parallel segmentation and fusion branches, our method achieves mutual enhancement between task performance and fusion quality. Experiments demonstrate state-ofthe-art results in both fusion controllability and segmentation accuracy, with the adapted task branch even outperforming the original segmentation model.]
 
 ![Network Architecture](model.png)
-*Figure 1: The overall architecture of our proposed [CtrlFuse].*
+*Figure 1: The overall architecture of our proposed CtrlFuse.*
 
 ## 🔨 Requirements
 The code has been tested with Python 3.8 and PyTorch 2.0.0 .
