@@ -30,6 +30,11 @@ conda activate ctrlfuse
 
 # 2. Install dependencies
 pip install -r requirements.txt
+
+# 3.  Segment-Anything-Model setting
+cd ./segment-anything
+pip install -v -e .
+cd ..
 ```
 
 ## 📂 Data Preparation
