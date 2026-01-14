@@ -39,7 +39,7 @@ Please organize your dataset as follows. Note: Ensure that the Visible and Infra
 Project_Root/
 ├── dataset/
 │   ├── train/
-│   │   ├── vi/             # Visible images (Grayscale or RGB)
+│   │   ├── vi/             # Visible images (RGB)
 │   │   │   ├── 1.jpg
 │   │   │   └── ...
 │   │   └── ir/           # Infrared images (Grayscale)
@@ -49,7 +49,7 @@ Project_Root/
 │   │       ├── 1.jpg
 │   │       └── ...
 │   └── test/
-│   │   ├── vi/             # Visible images (Grayscale or RGB)
+│   │   ├── vi/             # Visible images (RGB)
 │   │   │   ├── 1.jpg
 │   │   │   └── ...
 │   │   └── ir/           # Infrared images (Grayscale)
