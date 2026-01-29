@@ -24,7 +24,7 @@ class BCE_loss():
     def __init__(self):
         super().__init__()
     def cal(self,predictlabel, truelabel):
-        validindex = torch.where(torch.sum(truelabel, axis=2) == 1)  # 人工拾取了的道
+        validindex = torch.where(torch.sum(truelabel, axis=2) == 1)  
         criteria = nn.BCELoss()
         loss = criteria(predictlabel[validindex[0], validindex[1], :, validindex[2]],
                         truelabel[validindex[0], validindex[1], :, validindex[2]])
@@ -36,7 +36,7 @@ class MSE_loss():
     def __init__(self):
         super().__init__()
     def cal(self,predictlabel, truelabel):
-        validindex = torch.where(torch.sum(truelabel, axis=2) == 1)  # 人工拾取了的道
+        validindex = torch.where(torch.sum(truelabel, axis=2) == 1)  
         valid_predictlabel=predictlabel[validindex[0], validindex[1], :, validindex[2]]
         valid_truelabel = truelabel[validindex[0], validindex[1], :, validindex[2]]
         label_index=torch.argmax(valid_truelabel,dim=1)/valid_truelabel.shape[1]
@@ -255,8 +255,8 @@ class LpLssimLossweight(nn.Module):
             self.channel = channel
 
         # Lp
-        Lp = torch.sqrt(torch.sum(torch.pow((image_in - image_out), 2)))  # 二范数
-        # Lp = torch.sum(torch.abs(image_in - image_out))  # 一范数
+        Lp = torch.sqrt(torch.sum(torch.pow((image_in - image_out), 2))) 
+        # Lp = torch.sum(torch.abs(image_in - image_out))  
         # Lssim
         Lssim = 1 - self._ssim(image_in, image_out, self.window, self.window_size, self.channel, self.size_average)
         return Lp + Lssim * weight, Lp, Lssim * weight
