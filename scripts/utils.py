@@ -14,8 +14,8 @@ from common import utils
 def read_data(root: str):
     assert os.path.exists(root), "dataset root: {} does not exist.".format(root)########/root/project/FMB
 
-    train_root = os.path.join(root, "trn")#######/root/project/FMB/trn
-    val_root = os.path.join(root, "val")###########/root/project/FMB/val
+    train_root = os.path.join(root, "trn")#######
+    val_root = os.path.join(root, "val")###########
     assert os.path.exists(train_root), "train root: {} does not exist.".format(train_root)
     assert os.path.exists(val_root), "val root: {} does not exist.".format(val_root)
 
@@ -26,15 +26,15 @@ def read_data(root: str):
     val_images_infrared_path = []
     val_images_mask_path=[]
 
-    supported = [".jpg", ".JPG", ".png", ".PNG", ".bmp", 'tif', 'TIF']  # 支持的文件后缀类型
+    supported = [".jpg", ".JPG", ".png", ".PNG", ".bmp", 'tif', 'TIF']  
 
-    train_visible_root = os.path.join(train_root, "Visible")#######/root/project/FMB/train/Visible
-    train_infrared_root= os.path.join(train_root, "Infrared")#######/root/project/FMB/train/Infrared
-    train_mask_root= os.path.join(train_root, "mask")#######/root/project/FMB/train/mask
+    train_visible_root = os.path.join(train_root, "Visible")#######
+    train_infrared_root= os.path.join(train_root, "Infrared")#######
+    train_mask_root= os.path.join(train_root, "mask")#######
 
-    val_visible_root = os.path.join(val_root, "Visible")##########/root/project/FMB/eval/Visible
-    val_infrared_root = os.path.join(val_root, "Infrared")##########/root/project/FMB/eval/Infrared
-    val_mask_root= os.path.join(val_root, "mask")#######/root/project/FMB/eval/mask
+    val_visible_root = os.path.join(val_root, "Visible")##########
+    val_infrared_root = os.path.join(val_root, "Infrared")#########
+    val_mask_root= os.path.join(val_root, "mask")#######
     
     train_visible_path = [os.path.join(train_visible_root, i) for i in os.listdir(train_visible_root)
                   if os.path.splitext(i)[-1] in supported]
@@ -122,7 +122,7 @@ def train_one_epoch(args,model,sam_model, optimizer, lr_scheduler, data_loader, 
 
         protos,_=model(args.condition, I_A, I_B, mask, name)
         I_fused =sam_model(I_A_gt, name, protos)
-        # 使用插值调整高度和宽度
+       
         I_fused= F.interpolate(I_fused, size=(512, 512), mode='bilinear', align_corners=True)
         fused_img = tensor2numpy(I_fused)##512,512,3
         save_pic(fused_img, "/root/autodl-tmp/experiments/train", str(name[0]))
