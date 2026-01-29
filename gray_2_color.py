@@ -4,10 +4,10 @@ import numpy as np
 
 if __name__ == '__main__':
     # raw data
-    fuse_y_path = "D:/a0/0aaa/img/gray/"
-    vi_path     = "D:/a0/0aaa/img/vi/"
+    fuse_y_path = " "###gray
+    vi_path     = " "###vi
     # building save path
-    rgb_fuse_path = "D:/a0/0aaa/img/rgb/"
+    rgb_fuse_path = " "###rgb
     if not os.path.exists(rgb_fuse_path):
         os.makedirs(rgb_fuse_path)
     # get raw image list
