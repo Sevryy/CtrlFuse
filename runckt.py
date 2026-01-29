@@ -19,16 +19,16 @@ from torchvision import transforms
 from Net import net
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 warnings.filterwarnings("ignore")
-f_dir = '/root/autodl-tmp/experiments/ex14.4_FMB/gray'
-s_dir = '/root/autodl-tmp/experiments/ex14.4_FMB/seg'
+f_dir = ''############
+s_dir = ''###########
 if not os.path.exists(f_dir): os.makedirs(f_dir,exist_ok=True)
 if not os.path.exists(s_dir): os.makedirs(s_dir,exist_ok=True)
-model_weight_path='/root/autodl-tmp/CtrlFuse/pth/checkpoint_best.pth'
-test_root = '/root/pro/FMB/test'
+model_weight_path='pth/checkpoint_best.pth'
+test_root = ''############
 test_images_visible_path = []
 test_images_infrared_path = []
 test_images_mask_path=[]
-supported = [".jpg", ".JPG", ".png", ".PNG", ".bmp", 'tif', 'TIF']  # 支持的文件后缀类型
+supported = [".jpg", ".JPG", ".png", ".PNG", ".bmp", 'tif', 'TIF']  
 test_visible_root = os.path.join(test_root, "vi")#########
 test_infrared_root = os.path.join(test_root, "ir")##########
 test_mask_root= os.path.join(test_root, "mask")#######
