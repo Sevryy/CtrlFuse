@@ -19,12 +19,12 @@ from torchvision import transforms
 from Net import net
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 warnings.filterwarnings("ignore")
-f_dir = ''############
-s_dir = ''###########
+f_dir = ''############fused image
+s_dir = ''###########seg image
 if not os.path.exists(f_dir): os.makedirs(f_dir,exist_ok=True)
 if not os.path.exists(s_dir): os.makedirs(s_dir,exist_ok=True)
 model_weight_path='pth/checkpoint_best.pth'
-test_root = ''############
+test_root = ''############test image path
 test_images_visible_path = []
 test_images_infrared_path = []
 test_images_mask_path=[]
