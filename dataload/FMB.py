@@ -22,7 +22,6 @@ class FMBDataSet(Dataset):
         visible_path, infrared_path, mask_path = self.image_path_list[item]
 
         image_visible_gt1 = Image.open(visible_path).convert('L')
-        # 将单通道灰度图转换为三通道灰度图
         image_visible_gt = Image.new('RGB', image_visible_gt1.size)
         for x in range(image_visible_gt1.width):
             for y in range(image_visible_gt1.height):
