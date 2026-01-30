@@ -22,8 +22,11 @@ Infrared and visible image fusion generates all-weather perception-capable image
 
 ## 🔨 Requirements
 The code has been tested with Python 3.8 and PyTorch 2.0.0 .
-checkpoints can be downloaded with the links below:
+
+Checkpoints can be downloaded with the links below:
+
 [![Baidu Yun]](https://pan.baidu.com/s/1hqUoh8TS2ZCn4IWTDbV_vQ?pwd=sh7h)
+
 Additionally, you can download the ViT-H SAM model from the official Segment Anything website.
 
 ```bash
