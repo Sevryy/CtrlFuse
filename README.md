@@ -27,7 +27,9 @@ Checkpoints can be downloaded with the links below:
 
 [[Baidu Yun]](https://pan.baidu.com/s/1hqUoh8TS2ZCn4IWTDbV_vQ?pwd=sh7h)
 
-Additionally, you can download the ViT-H SAM model from the official Segment-anything website.
+Additionally, you can download the ViT-H SAM model from the official Segment-anything website:
+
+[[Segment-anything]](https://github.com/facebookresearch/segment-anything?tab=readme-ov-file)
 
 ```bash
 # 1. Create a conda environment
