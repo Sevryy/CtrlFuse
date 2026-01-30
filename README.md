@@ -25,9 +25,9 @@ The code has been tested with Python 3.8 and PyTorch 2.0.0 .
 
 Checkpoints can be downloaded with the links below:
 
-[![Baidu Yun]](https://pan.baidu.com/s/1hqUoh8TS2ZCn4IWTDbV_vQ?pwd=sh7h)
+[[Baidu Yun]](https://pan.baidu.com/s/1hqUoh8TS2ZCn4IWTDbV_vQ?pwd=sh7h)
 
-Additionally, you can download the ViT-H SAM model from the official Segment Anything website.
+Additionally, you can download the ViT-H SAM model from the official Segment-anything website.
 
 ```bash
 # 1. Create a conda environment
