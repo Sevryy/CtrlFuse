@@ -207,7 +207,7 @@ class  net(nn.Module):
         LayerNorm_type='WithBias',
         out_channel=1,):
         super().__init__()
-        self.sam_model = sam_model_registry['vit_h']('/root/autodl-tmp/CtrlFuse/pth/sam_vit_h_4b8939.pth')
+        self.sam_model = sam_model_registry['vit_h']('pth/sam_vit_h_4b8939.pth')######Please download it via the Segment-anything link.
         self.sam_model.eval()
       
         self.merge_v = nn.Sequential(
